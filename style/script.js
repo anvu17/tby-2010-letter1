@@ -19,6 +19,14 @@ $(document).ready(function () {
   messageData = getMessageData();
   totalPages = messageData.pages.length;
 
+    // Set page title dynamically
+    try {
+        const recipientTitle = (messageData && messageData.recipient) ? messageData.recipient : 'bạn';
+        document.title = `Nhắn gửi ${recipientTitle}`;
+    } catch (e) {
+        // no-op
+    }
+
   // Build pages
   messageData.pages.forEach((text, idx) => {
       const displayText = (idx === 0)

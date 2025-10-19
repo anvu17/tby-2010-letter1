@@ -85,6 +85,10 @@ const RECIPIENT_MAP = {
 	"linh": { name: "Linh", messageId: "1" },
 	"em-yeu": { name: "Em yêu", messageId: "1" },
 
+	// Ví dụ thêm mới
+	"0": { name: "Nguyễn Văn A", messageId: "1" },
+	"198": { name: "Thu", messageId: "1" },
+
 	// Sinh nhật
 	"nam-bday": { name: "Nam", messageId: "2" },
 	"me-birthday": { name: "Mẹ", messageId: "2" },
